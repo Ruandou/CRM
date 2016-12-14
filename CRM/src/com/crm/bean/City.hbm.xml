@@ -4,11 +4,12 @@
     "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
     
 <hibernate-mapping>
-    <class name="com.crm.bean.Country" table="Country">
+    <class name="com.crm.bean.City" table="City">
         <id name="id" column="Id" type="int">
             <generator class="native" />
         </id>
         <property name="name" column="Name" type="String" />
-        <property name="code" column="Code" type="String" />
+        <many-to-one name="country" column="CountryId" class="com.crm.bean.Country" />
+        <property name="description" column="Description" type="String" />
     </class>
 </hibernate-mapping>

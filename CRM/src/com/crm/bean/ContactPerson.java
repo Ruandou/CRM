@@ -6,6 +6,7 @@ public class ContactPerson {
 	private String name;
 	private String email;
 	private String cellphone;
+	private String telephone;
 	private String description;
 	
 	public int getId() {
@@ -48,6 +49,14 @@ public class ContactPerson {
 		this.cellphone = cellphone;
 	}
 	
+	public String getTelephone() {
+		return telephone;
+	}
+
+	public void setTelephone(String telephone) {
+		this.telephone = telephone;
+	}
+
 	public String getDescription() {
 		return description;
 	}

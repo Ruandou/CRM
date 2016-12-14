@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+<hibernate-mapping>
+    <class name="com.crm.bean.Customer" table="Customer">
+        <id name="id" column="Id" type="int">
+            <generator class="native" />
+        </id>
+        <property name="company" column="Company" type="String" />
+        <many-to-one name="address" column="AddressId" class="com.crm.bean.Address" />
+        <property name="priority" column="Priority" type="int" />
+        <property name="description" column="Description" type="String" />
+    </class>
+</hibernate-mapping>

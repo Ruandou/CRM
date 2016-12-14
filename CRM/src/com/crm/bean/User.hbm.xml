@@ -3,13 +3,13 @@
     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
     "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
     
-<hibernate-mapping package="com.crm.bean">
-    <class name="User">
-        <id name="id">
-            <generator class="increment" />
+<hibernate-mapping>
+    <class name="com.crm.bean.User" table="User">
+        <id name="id" column="Id" type="int">
+            <generator class="native" />
         </id>
-        <property name="userId" />
-        <property name="userName" />
-        <property name="password" />
+        <property name="userId" column="UserId" type="String"/>
+        <property name="userName" column="UserName" type="String" />
+        <property name="password" column="Password" type="String" />
     </class>
 </hibernate-mapping>

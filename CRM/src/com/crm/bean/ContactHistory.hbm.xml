@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+<hibernate-mapping>
+    <class name="com.crm.bean.ContactHistory" table="ContactHistory">
+        <id name="id" column="Id" type="int">
+            <generator class="native" />
+        </id>
+        <many-to-one name="contactPerson" column="ContactPersonId" class="com.crm.bean.ContactPerson" />
+        <property name="dateTime" column="DateTime" type="java.util.Date" />
+        <property name="question" column="Question" type="String" />
+        <property name="solution" column="Solution" type="String" />
+        <property name="description" column="Description" type="String" />
+    </class>
+</hibernate-mapping>
