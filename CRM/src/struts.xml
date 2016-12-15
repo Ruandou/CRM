@@ -9,8 +9,9 @@
 	<constant name="struts.enable.DynamicsMethodInvocation" value="false" />
 	
 	<package name="default" extends="struts-default">
-		<action name="login" class="testAction">
+		<action name="login" class="userAction" method="login">
 			<result name="success">/index.jsp</result>
+			<result name="fail">/login.jsp</result>
 		</action>
 	</package>
 </struts>

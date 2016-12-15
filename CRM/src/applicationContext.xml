@@ -56,5 +56,8 @@
     <bean id="hibernateTemplate" class="org.springframework.orm.hibernate5.HibernateTemplate">
     	<property name="sessionFactory" ref="sessionFactory" />
     </bean>
+    
+    <bean id="userAction" class="com.crm.action.UserAction">
+    </bean>
 </beans>
 

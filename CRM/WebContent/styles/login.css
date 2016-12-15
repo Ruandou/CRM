@@ -1,0 +1,39 @@
+@CHARSET "UTF-8";
+
+form {
+	margin: 10px auto;
+	width: 400px;
+	padding: 1em;
+	border: 1px solid #ccc;
+	border-radius: 1em;
+}
+
+form p + p {
+	margin-top: 1em;
+}
+
+input {
+	font: 1em sans-serif;
+	width: 250px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #999;
+}
+
+input:focus {
+	border-color: #000;
+}
+
+label span{
+	display: inline-block;
+	width: 120px;
+	text-align: right;
+}
+
+.button {
+	padding-left: 90px;
+}
+
+button {
+	margin-left: 124px;
+}
