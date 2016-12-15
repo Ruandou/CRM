@@ -5,10 +5,10 @@
     
 <hibernate-mapping>
     <class name="com.crm.bean.Country" table="Country">
-        <id name="id" column="Id" type="int">
+        <id name="id" column="Id" type="java.lang.Integer">
             <generator class="native" />
         </id>
-        <property name="name" column="Name" type="String" />
-        <property name="code" column="Code" type="String" />
+        <property name="name" column="Name" type="java.lang.String" />
+        <property name="code" column="Code" type="java.lang.String" />
     </class>
 </hibernate-mapping>

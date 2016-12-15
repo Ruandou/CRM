@@ -5,13 +5,13 @@
     
 <hibernate-mapping>
     <class name="com.crm.bean.ContactHistory" table="ContactHistory">
-        <id name="id" column="Id" type="int">
+        <id name="id" column="Id" type="java.lang.Integer">
             <generator class="native" />
         </id>
         <many-to-one name="contactPerson" column="ContactPersonId" class="com.crm.bean.ContactPerson" />
         <property name="dateTime" column="DateTime" type="java.util.Date" />
-        <property name="question" column="Question" type="String" />
-        <property name="solution" column="Solution" type="String" />
-        <property name="description" column="Description" type="String" />
+        <property name="question" column="Question" type="java.lang.String" />
+        <property name="solution" column="Solution" type="java.lang.String" />
+        <property name="description" column="Description" type="java.lang.String" />
     </class>
 </hibernate-mapping>

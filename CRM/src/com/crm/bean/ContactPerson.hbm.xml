@@ -5,14 +5,14 @@
     
 <hibernate-mapping>
     <class name="com.crm.bean.ContactPerson" table="ContactPerson">
-        <id name="id" column="Id" type="int">
+        <id name="id" column="Id" type="java.lang.Integer">
             <generator class="native" />
         </id>
         <many-to-one name="customer" column="CustomerId" class="com.crm.bean.Customer" />
-        <property name="name" column="Name" type="String" />
-        <property name="email" column="Email" type="String" />
-        <property name="cellphone" column="Cellphone" type="String" />
-        <property name="telephone" column="Telephone" type="String" />
-        <property name="description" column="Description" type="String" />
+        <property name="name" column="Name" type="java.lang.String" />
+        <property name="email" column="Email" type="java.lang.String" />
+        <property name="cellphone" column="Cellphone" type="java.lang.String" />
+        <property name="telephone" column="Telephone" type="java.lang.String" />
+        <property name="description" column="Description" type="java.lang.String" />
     </class>
 </hibernate-mapping>

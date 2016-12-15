@@ -5,11 +5,11 @@
     
 <hibernate-mapping>
     <class name="com.crm.bean.User" table="User">
-        <id name="id" column="Id" type="int">
+        <id name="id" column="Id" type="java.lang.Integer">
             <generator class="native" />
         </id>
-        <property name="userId" column="UserId" type="String"/>
-        <property name="userName" column="UserName" type="String" />
-        <property name="password" column="Password" type="String" />
+        <property name="userId" column="UserId" type="java.lang.String"/>
+        <property name="userName" column="UserName" type="java.lang.String" />
+        <property name="password" column="Password" type="java.lang.String" />
     </class>
 </hibernate-mapping>
