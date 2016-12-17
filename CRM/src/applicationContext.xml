@@ -46,6 +46,12 @@
         </property>
         <property name="mappingResources">
             <list>
+                <value>com/crm/bean/Address.hbm.xml</value>
+                <value>com/crm/bean/City.hbm.xml</value>
+                <value>com/crm/bean/ContactHistory.hbm.xml</value>
+                <value>com/crm/bean/ContactPerson.hbm.xml</value>
+                <value>com/crm/bean/Country.hbm.xml</value>
+                <value>com/crm/bean/Customer.hbm.xml</value>
                 <value>com/crm/bean/User.hbm.xml</value>
             </list>
         </property>
