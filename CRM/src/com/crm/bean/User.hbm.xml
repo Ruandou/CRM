@@ -4,12 +4,12 @@
     "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
     
 <hibernate-mapping>
-    <class name="com.crm.bean.User" table="User">
-        <id name="id" column="Id" type="java.lang.Integer">
+    <class name="com.crm.bean.User" table="[User]">
+        <id name="id" column="Id">
             <generator class="native" />
         </id>
-        <property name="userId" column="UserId" type="java.lang.String"/>
-        <property name="userName" column="UserName" type="java.lang.String" />
-        <property name="password" column="Password" type="java.lang.String" />
+        <property name="userId" column="UserId" />
+        <property name="userName" column="UserName" />
+        <property name="password" column="Password" />
     </class>
 </hibernate-mapping>

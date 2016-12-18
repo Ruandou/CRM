@@ -8,7 +8,7 @@
         <id name="id" column="Id" type="java.lang.Integer">
             <generator class="native" />
         </id>
-        <property name="name" column="Name" type="String" />
+        <property name="name" column="Name" type="string" />
         <many-to-one name="country" column="CountryId" class="com.crm.bean.Country" />
         <property name="description" column="Description" type="java.lang.String" />
     </class>

@@ -30,10 +30,17 @@ label span{
 	text-align: right;
 }
 
-.button {
-	padding-left: 90px;
+.tip span {
+	display: inline-block;
+	color: red;
+}
+
+.button, .tip {
+	padding-left: 124px;
 }
 
 button {
-	margin-left: 124px;
+	border-radius: .5em;
+	background-color: #055;
+	color: #fff;
 }

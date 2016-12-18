@@ -6,12 +6,20 @@ public class User {
 	private String userName;
 	private String password;
 	
+	public User() {}
+	
 	public User(String userId, String password) {
-		super();
 		this.userId = userId;
 		this.password = password;
 	}
 	
+	public User(int id, String userId, String userName, String password) {
+		this.id = id;
+		this.userId = userId;
+		this.userName = userName;
+		this.password = password;
+	}
+
 	public int getId() {
 		return id;
 	}
