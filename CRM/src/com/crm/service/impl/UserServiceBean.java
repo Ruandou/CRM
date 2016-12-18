@@ -22,16 +22,14 @@ public class UserServiceBean implements UserService {
 	}
 
 	@Override
-	@Transactional(propagation=Propagation.NOT_SUPPORTED)
 	public User findById(String userId) {
 		return (User)factory.getCurrentSession().get(User.class, userId);
 	}
 
 	@Override
 	@SuppressWarnings("unchecked")
-	@Transactional(propagation=Propagation.NOT_SUPPORTED)
 	public boolean login(String userId, String password) {
-		List<User> users = factory.getCurrentSession().createQuery("from [User]").getResultList();
+		List<User> users = factory.getCurrentSession().createQuery("from User").getResultList();
 		for (User user : users) {
 			if (user.getUserId().equals(userId) && user.getPassword().equals(password)) {
 				return true;
@@ -43,6 +41,6 @@ public class UserServiceBean implements UserService {
 	@Override
 	@SuppressWarnings("unchecked")
 	public List<User> getAll() {
-		return factory.getCurrentSession().createQuery("from [User]").getResultList();
+		return factory.getCurrentSession().createQuery("from User").getResultList();
 	}
 }

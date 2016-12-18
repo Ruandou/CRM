@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 
 import com.crm.bean.User;
 import com.crm.service.UserService;
+import com.opensymphony.xwork2.ActionContext;
 
 @Controller @Scope("prototype")
 public class UserAction {
@@ -26,6 +27,7 @@ public class UserAction {
 		if (userService.login(user.getUserId(), user.getPassword())) {
 			return "success";
 		} else {
+			ActionContext.getContext().put("message", "用户名或密码错误。");
 			return "fail";
 		}
 	}
