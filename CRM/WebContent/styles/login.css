@@ -33,6 +33,7 @@ label span{
 .tip span {
 	display: inline-block;
 	color: red;
+	font: .8em sans-serif;
 }
 
 .button, .tip {

@@ -22,14 +22,12 @@ public class UserServiceBean implements UserService {
 	}
 
 	@Override
-	@Transactional(propagation=Propagation.NOT_SUPPORTED)
 	public User findById(String userId) {
 		return (User)factory.getCurrentSession().get(User.class, userId);
 	}
 
 	@Override
 	@SuppressWarnings("unchecked")
-	//@Transactional(propagation=Propagation.NOT_SUPPORTED)
 	public boolean login(String userId, String password) {
 		List<User> users = factory.getCurrentSession().createQuery("from User").getResultList();
 		for (User user : users) {
