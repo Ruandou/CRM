@@ -12,7 +12,7 @@ form p + p {
 	margin-top: 1em;
 }
 
-input {
+form input {
 	font: 1em sans-serif;
 	width: 250px;
 	-moz-box-sizing: border-box;
@@ -20,7 +20,7 @@ input {
 	border: 1px solid #999;
 }
 
-input:focus {
+form input:focus {
 	border-color: #000;
 }
 
