@@ -71,3 +71,34 @@ header form {
     border: none;
     font-size: 1em;
 }
+
+.header-nav {
+    float: left;
+    height: 30px;
+    margin-left: 10px;
+    /*border-left: 2px dotted #fff;*/
+    font-family: "Luciada Grande", "Helvetica", "Arial", sans-serif;
+    font-size: .9em;
+}
+
+.header-nav ul {
+    background-color: red;
+}
+
+.header-nav li {
+    display: inline;
+    list-style: none;
+}
+
+.header-nav li a {
+    display: block;
+    float: left;
+    text-decoration: none;
+    padding: 5px 5px;
+    font-weight: bold;
+    color: #000;
+}
+
+.header-nav li a:hover {
+    color: #fff;
+}

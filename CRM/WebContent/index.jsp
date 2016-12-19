@@ -18,6 +18,12 @@
                             <input type="text" placeholder="Search" />
                         </form>
                     </div>
+                    <nav class="header-nav">
+                        <ul>
+                            <li><a href="#">我的顾客</a></li>
+                            <li><a href="#">placeholder</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </header>
         </div>
