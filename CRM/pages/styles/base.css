@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 50px;
+    min-width: 1300px;
+    background-color: #ccc
+}
+
+.header {
+    margin-bottom: 5px;
+}
+
+header, .content {
+    width: 1300px;
+    margin: 0px auto;
+}
+
+header {
+    height: 50px;
+}
+
+.content {
+    height: 800px;
+    margin-bottom: 5px;
+}
+
+.footer {
+    height: 30px;
+    min-width: 1300px;
+    background-color: #eee;
+    text-align: center;
+}
+
+.header-content {
+    height: 30px;
+    padding: 10px 0;
+}
+
+.header-logo, .header-search {
+    float: left;
+}
+
+.header-logo {
+    margin-right: 10px;
+}
+
+.header-logo span {
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    margin: 2.5px 0;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.header-search form {
+    height: 30px;
+    border: 1px solid #777;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.header-search input {
+    display: inline-block;
+    width: 300px;
+    height: 27px;
+    padding: 1.5px 5px;
+    border: none;
+    font-size: 1em;
+}
+
+.header-nav {
+    float: left;
+    height: 30px;
+    margin-left: 10px;
+    border-left: 2px dotted #fff;
+    font-family: "Luciada Grande", "Helvetica", "Arial", sans-serif;
+    font-size: .9em;
+}
+
+.header-nav ul {
+    background-color: red;
+}
+
+.header-nav li {
+    display: inline;
+    list-style: none;
+}
+
+.header-nav li a {
+    display: block;
+    float: left;
+    text-decoration: none;
+    padding: 5px 5px;
+    font-weight: bold;
+    color: #000;
+}
+
+.header-nav li a:hover {
+    color: #fff;
+}

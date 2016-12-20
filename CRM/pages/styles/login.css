@@ -1,0 +1,45 @@
+form {
+	margin: 10px auto;
+	width: 400px;
+	padding: 1em;
+	border: 1px solid #ccc;
+	border-radius: 1em;
+}
+
+form p + p {
+	margin-top: 1em;
+}
+
+form input {
+	font: 1em sans-serif;
+	width: 250px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #999;
+}
+
+form input:focus {
+	border-color: #000;
+}
+
+label span{
+	display: inline-block;
+	width: 120px;
+	text-align: right;
+}
+
+.tip span {
+	display: inline-block;
+	color: red;
+	font: .8em sans-serif;
+}
+
+.button, .tip {
+	padding-left: 124px;
+}
+
+button {
+	border-radius: .5em;
+	background-color: #055;
+	color: #fff;
+}
