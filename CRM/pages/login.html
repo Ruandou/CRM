@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" media="screen" href="styles/base.css" />
+        <link rel="stylesheet" media="screen" href="styles/login.css" />
+        <title>CRM</title>
+    </head>
+    <body>
+        <div class="header">
+            <header>
+                <div class="header-content">
+                    <div class="header-logo"><span>CRM</span></div>
+                </div>
+            </header>
+        </div>
+        <div class="content">
+			<form action="login" method="post" id="loginForm">
+				<P>
+					<label for="userId"><span>*用户名：</span></label>
+					<input type="text" id="userId" name="user.userId" />
+				</P>
+				<p>
+					<label for="password"><span>*密码：</span></label>
+					<input type="password" id="password" name="user.password" />
+				</p>
+				<p class="tip">
+					<span>${message}</span>
+				</p>
+				<p class="button">
+					<button type="submit">登录</button>
+				</p>
+			</form>
+		</div>
+        <div class="footer">
+            <footer>
+                <div><span>Copy right</span></div>
+            </footer>
+        </div>
+	</body>
+</html>
